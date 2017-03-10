@@ -1,6 +1,6 @@
 <?php
 /**
- * ����һ��Material Design�������
+ * 这是一款Material Design风格主题
  * 
  * @package cmd Theme 
  * @author ccizm
@@ -22,6 +22,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 					</div>
 				</div>
 			</div>
+          <!--我最会英语了！！！！！！！！！！！！！--->
 			<div class="container">
 				<section class="content-inner margin-top-no">
 					<div class="col-lg-12 col-sm-12">
@@ -35,6 +36,20 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 							</div>
 						</div>
 					</div>
+					<div class="col-lg-12 col-sm-12">
+						<div class="card card-brand-accent">
+							<div class="card-main">
+								<div class="card-action">
+									<div class="card-action-btn pull-left">
+										<ul>
+					<?php if ($this->options->Bulletin): ?><p><?php $this->options->Bulletin() ?></p><?php endif; ?>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+                  <?php while($this->next()): ?>
 					<div class="col-lg-12 col-sm-12">
 						<div class="card card-brand">
 							<div class="card-main">
@@ -78,19 +93,10 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-12 col-sm-12">
-						<div class="card card-brand-accent">
-							<div class="card-main">
-								<div class="card-action">
-									<div class="card-action-btn pull-left">
-										<ul>
+                  <?php endwhile; ?>
+                  <center>
 										<?php $this->pageNav('&laquo; ', ' &raquo;'); ?>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+                  </center>
 				</section>
 			</div>
 		</main>
