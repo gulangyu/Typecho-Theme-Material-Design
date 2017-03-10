@@ -4,10 +4,10 @@
 				Theme by &copy;
 				<a href="https://ccizm.com">
 					CCIZM
-				</a> <a href="http://typecho.org">Typecho</a>强力驱动
+              </a> <a href="http://typecho.org">Typecho</a>强力驱动
 			</div>
 			移植(&copy;
-			<a href="#">
+			<a href="<?php $this->options->themeUrl('/staff'); ?>">
 				STAFF
 			</a>
 			)
