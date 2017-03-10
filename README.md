@@ -15,8 +15,7 @@ CMD is a Material Design typecho theme.
 
 [Hello world](http://sudamod.cn)
 
-### 2017-03-11 Update to 0.1.2
-
+### 2017-03-11 Update to 0.1.5
 1. Modify comments.php
 2. Modify header.php
 3. Modify page.php
