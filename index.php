@@ -1,10 +1,10 @@
 <?php
 /**
- * 这是一款Material Design风格主题
+ * 这是一款Material Design风格主题，你可以访问<a href="http://ccizm.com">芝麻的小站</a>获得和提交更多关于此皮肤的信息与问题
  * 
  * @package cmd Theme 
  * @author ccizm
- * @version 0.1
+ * @version 0.1.2
  * @link http://ccizm.com
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
