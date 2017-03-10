@@ -23,8 +23,6 @@
 							</div>
 						</div>
 							<?php include('comments.php'); ?>
-				</section>
-				</div>
 			</div>
 		</main>
 <?php $this->need('footer.php'); ?>
