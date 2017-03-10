@@ -1,13 +1,13 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <div id="comments">
-    <?php $this->comments()->to($comments); ?>
-    <?php if ($comments->have()): ?>
 <div class="col-lg-6 col-md-6">
 <div class="card margin-bottom-no">
 <div class="card-main">
 <div class="card-inner">
 <div class="card-inner">
-<p class="card-heading">
+    <?php $this->comments()->to($comments); ?>
+    <?php if ($comments->have()): ?>
+  <p class="card-heading">
 	<?php $this->commentsNum(_t('暂无评论'), _t('仅有一条评论'), _t('已有 %d 条评论')); ?></p>
     <?php $comments->listComments(); ?>
     <?php $comments->pageNav('<span class="icon">chevron left</span>前一页', '后一页<span class="icon">chevron right</span>',3); ?>
@@ -65,6 +65,16 @@
 	</div>
 	</div>
     <?php else: ?>
-    <h3><?php _e('评论已关闭'); ?></h3>
+<div class="col-lg-12 col-md-12">
+<div class="card margin-bottom-no">
+	<div class="card-main">
+		<div class="card-inner">
+			<div class="card-inner">
+				<p class="card-heading" id="response"><?php _e('评论已关闭'); ?></p>
+    </div>
+	</div>
+	</div>
+	</div>
+	</div>
     <?php endif; ?>
 </div>
