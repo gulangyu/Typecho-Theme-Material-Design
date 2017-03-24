@@ -22,5 +22,6 @@ CMD is a Material Design typecho theme.
 4. Modify index.php
 5. Add to functions.php
 
-####Welcome my blog！
+### Welcome my blog！
+
 [芝麻的小站](https://ccizm.com)
